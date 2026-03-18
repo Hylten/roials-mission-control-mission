@@ -1,0 +1,26 @@
+[
+  {
+    "id": "antigravity",
+    "name": "Antigravity",
+    "role": "Lead AI Architect",
+    "status": "thinking",
+    "lastAction": "Optimizing Mission Control",
+    "color": "hsl(213, 100%, 75%)"
+  },
+  {
+    "id": "bo",
+    "name": "Bo",
+    "role": "Inbound & CRM Manager",
+    "status": "idle",
+    "lastAction": "Summarizing Discord",
+    "color": "hsl(142, 71%, 45%)"
+  },
+  {
+    "id": "platnicklas",
+    "name": "Plåtnicklas",
+    "role": "SDR Outreach",
+    "status": "active",
+    "lastAction": "Checking YouTube Trends",
+    "color": "hsl(0, 72%, 51%)"
+  }
+]

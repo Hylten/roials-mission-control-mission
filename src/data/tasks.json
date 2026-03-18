@@ -1,0 +1,34 @@
+[
+  {
+    "id": "task-1",
+    "title": "📞 Power Dialer Setup (HubSpot/Zcall)",
+    "status": "todo",
+    "priority": "high",
+    "assignedTo": "platnicklas",
+    "category": "SDR"
+  },
+  {
+    "id": "task-2",
+    "title": "🏢 LinkedIn Sales Navigator Skrapning",
+    "status": "todo",
+    "priority": "high",
+    "assignedTo": "platnicklas",
+    "category": "SDR"
+  },
+  {
+    "id": "task-3",
+    "title": "✉️ Kalla Mail B2B Templates",
+    "status": "in-progress",
+    "priority": "medium",
+    "assignedTo": "bo",
+    "category": "Email"
+  },
+  {
+    "id": "task-4",
+    "title": "💎 Mission Control Dashboard",
+    "status": "in-progress",
+    "priority": "medium",
+    "assignedTo": "antigravity",
+    "category": "AI"
+  }
+]

@@ -1,0 +1,12 @@
+## Lovable Build Prompt (Paste this into Lovable)
+
+"I want to build a premium, autonomous Agent-Kanban board called 'Roials Mission Control'. Use the provided codebase structure (React/Vite). 
+
+FEATURES:
+1. Glassmorphism Design: Translucent cards, heavy blurs, and Royals-Alpha (red/dark) accents.
+2. Live Agent Pulse: Render the agents from /src/data/agents.json with breathing pulse animations.
+3. Task Management: Fetch tasks from /src/data/tasks.json and render three columns: 'To Do', 'In Progress', and 'Done'.
+4. SDR Focus Mode: Add a 'Revenue Shield' header that highlights Prio-1 sales tasks from the SDR category.
+5. Typography: Use 'Outfit' for headers and 'Inter' for body text.
+
+The app should look high-end, futuristic, and alive with micro-animations. Make it look like a million-dollar dashboard for a Brand Principal."
