@@ -120,15 +120,6 @@ const App = () => {
 
         {/* Morning Brief (längst ner, minimerbar) */}
         <MorningBrief />
-
-        {/* Kanban System */}
-        <section className="space-y-4 pb-20">
-          <div className="flex items-center gap-2 px-2 text-xs font-bold text-muted-foreground tracking-widest uppercase">
-            <Layout className="w-4 h-4 text-primary" />
-            MISSION OBJECTIVES & TASK FLOW
-          </div>
-          <KanbanBoard />
-        </section>
       </div>
 
       {/* Floating Mission Chat (Fixed at Top-Right in component) */}
