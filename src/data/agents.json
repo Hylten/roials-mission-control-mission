@@ -5,7 +5,8 @@
     "role": "Orchestrator — alla cron-jobb",
     "status": "active",
     "lastAction": "Driver 12 automatiska jobb",
-    "color": "hsl(265, 100%, 70%)"
+    "color": "hsl(265, 100%, 70%)",
+    "start_cmd": "hermes"
   },
   {
     "id": "mr-writer",
@@ -13,7 +14,8 @@
     "role": "Content-loop · 8 bloggar (QA)",
     "status": "active",
     "lastAction": "Körs var 30:e min — senast OK 02:32",
-    "color": "hsl(142, 71%, 45%)"
+    "color": "hsl(142, 71%, 45%)",
+    "start_cmd": ""
   },
   {
     "id": "inbox-manager",
@@ -21,7 +23,8 @@
     "role": "Prosp→Replied leads→Draft",
     "status": "idle",
     "lastAction": "Nästa körning 08:00 — senast error (Telegram timeout)",
-    "color": "hsl(0, 72%, 51%)"
+    "color": "hsl(0, 72%, 51%)",
+    "start_cmd": ""
   },
   {
     "id": "roials-alpha",
@@ -29,6 +32,43 @@
     "role": "Inbox-sync · Prospektsourcing · Bounce",
     "status": "active",
     "lastAction": "Inbox-synk var 20:e min — OK",
-    "color": "hsl(213, 100%, 75%)"
+    "color": "hsl(213, 100%, 75%)",
+    "start_cmd": ""
+  },
+  {
+    "id": "codex",
+    "name": "Codex",
+    "role": "OpenAI Codex — kod-specialist",
+    "status": "idle",
+    "lastAction": "Klicka för att ge en uppgift → startar i Terminal",
+    "color": "hsl(25, 100%, 60%)",
+    "start_cmd": "codex exec \"{task}\""
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "role": "Anthropic — kod & analys",
+    "status": "idle",
+    "lastAction": "Klicka för att ge en uppgift → startar i Terminal",
+    "color": "hsl(30, 90%, 55%)",
+    "start_cmd": "claude -p \"{task}\""
+  },
+  {
+    "id": "openclaw",
+    "name": "OpenClaw",
+    "role": "Autonom agent",
+    "status": "idle",
+    "lastAction": "Klicka för att ge en uppgift → startar i Terminal",
+    "color": "hsl(180, 80%, 50%)",
+    "start_cmd": "openclaw run \"{task}\""
+  },
+  {
+    "id": "agent-zero",
+    "name": "Agent Zero",
+    "role": "Autonom agent (lokal)",
+    "status": "idle",
+    "lastAction": "Klicka för att öppna i Terminal",
+    "color": "hsl(280, 70%, 60%)",
+    "start_cmd": "cd ~/agent-zero/agent-zero && ls && echo 'Starta agent-zero här'"
   }
 ]

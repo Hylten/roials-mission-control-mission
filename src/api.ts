@@ -19,6 +19,7 @@ export type Agent = {
   status: "active" | "idle" | "thinking" | "offline";
   lastAction: string;
   color: string;
+  start_cmd?: string;
 };
 
 export type SyncStatus = {

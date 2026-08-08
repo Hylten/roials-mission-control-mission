@@ -73,27 +73,16 @@ const App = () => {
             {/* TOKEN MONITOR — visuell förbrukning */}
             <TokenPulse />
 
-            {/* Sekundära agenter (nedtonade) */}
-            <div className="glass-card p-4 h-auto opacity-50 hover:opacity-90 transition-opacity">
-              <h3 className="text-white/70 font-bold text-xs uppercase mb-3 tracking-widest flex items-center gap-2">
-                <Signal className="w-3 h-3" />
-                OpenClaw Control
+            {/* Tipsruta: hur man pratar med agenter */}
+            <div className="glass-card p-4 h-auto opacity-80">
+              <h3 className="text-white/70 font-bold text-xs uppercase mb-3 tracking-widest">
+                💬 Prata med agenter
               </h3>
-              <div className="bg-black/40 rounded-lg p-2.5 font-mono text-[9px] text-emerald-400/70 border border-emerald-400/10">
-                {'>'} monitoring kanban...<br/>
-                {'>'} sdr-workflow synced
-              </div>
-            </div>
-
-            <div className="glass-card p-4 h-auto opacity-50 hover:opacity-90 transition-opacity border-purple-400/10">
-              <h3 className="text-purple-400/70 font-bold text-xs uppercase mb-3 tracking-widest flex items-center gap-2">
-                <Signal className="w-3 h-3" />
-                Claude Code Deep
-              </h3>
-              <div className="bg-black/40 rounded-lg p-2.5 font-mono text-[9px] text-purple-400/60 border border-purple-400/10">
-                {'>'} local context mapping...<br/>
-                {'>'} repo analysis 100%
-              </div>
+              <p className="text-[10px] text-white/60 leading-relaxed">
+                Längre ner i "AI Agent Squad" — klicka på en agent (t.ex. Codex, Claude
+                eller Agent Zero), diktera med 🎤 eller skriv en uppgift, och den
+                startar direkt i din Terminal.
+              </p>
             </div>
           </div>
           
