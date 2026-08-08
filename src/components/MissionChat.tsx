@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { MessageSquare, Send, X, PlusSquare, Loader2, Zap, Cpu } from "lucide-react";
+import { MessageSquare, Send, X, PlusSquare, Loader2, Zap, Cpu, Trash2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TasksAPI, type Task } from "../api";
 
@@ -55,6 +55,7 @@ const MissionChat = () => {
 Du svarar ALLTID på svenska, kort och koncist (max 5 meningar om inget annat begärs).
 Du hjälper Jonas med hans AI-agents kanban-bräda (Roials Mission Control).
 Aktiva agenter på brädan: Hermes Core (orkestrerar 12 cron-jobb), Mr. Writer (content-loop 8 bloggar), Inbox Manager (replied leads), Roials Alpha GTM (outreach/prospektsourcing/bounce).
+VILKEN MODELL DU ÄR: Du körs via opencode-zen (gratis-modeller). Standard är Big Pickle eller DeepSeek V4 Flash (deepseek-v4-flash-free). Du är INTE GPT-baserad. Hela failsafe-kedjan (alla gratis): deepseek-v4-flash-free → big-pickle → mimo-v2.5-free → ling-3.0-flash-free → ling-3.0-tiny-free → north-mini-code-free → laguna-s-2.1-free → longcat-2.0-free → lokal Qwen (OpenMono, $0) → Mistral → nemotron-3-ultra-free. Säg alltid sanningen om vilken modell du kör om Jonas frågar.
 Om Jonas ber dig skapa en uppgift, svara med exakt format: TASK: <titel> | prio: high|medium|low | agent: hermes-core|mr-writer|inbox-manager|roials-alpha | kategori: <kategori>
 Skriv aldrig ut hemligheter eller API-nycklar.`;
   };
@@ -214,23 +215,6 @@ Skriv aldrig ut hemligheter eller API-nycklar.`;
 
   return (
     <div className="fixed top-6 right-6 z-50 flex flex-col items-end gap-3">
-      {/* Senaste meddelanden (mini-view) */}
-      {!isOpen && messages.length > 0 && (
-        <div className="flex flex-col gap-2 mb-2 items-end">
-          {messages.slice(-3).map((m: Message) => (
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              key={m.id}
-              className="glass-card px-3 py-1.5 text-xs max-w-[220px] border-primary/20"
-            >
-              <span className="font-bold text-primary mr-1">{m.sender}:</span>
-              {m.text}
-            </motion.div>
-          ))}
-        </div>
-      )}
-
       {/* Main Chat Window */}
       <AnimatePresence>
         {isOpen && (
@@ -246,10 +230,19 @@ Skriv aldrig ut hemligheter eller API-nycklar.`;
                 <h3 className="font-bold text-sm">Mission Chat</h3>
                 <span className="flex items-center gap-1 text-[9px] text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-full">
                   <Zap className="w-2.5 h-2.5" />
-                  {model === "big-pickle" ? "Big Pickle" : "DeepSeek"}
+                  {models[model] || model}
                 </span>
               </div>
               <div className="flex gap-2">
+                <button
+                  onClick={() => {
+                    setMessages([]);
+                    localStorage.removeItem("mission_chat_history");
+                  }}
+                  title="Rensa historik"
+                >
+                  <Trash2 className="w-3.5 h-3.5 hover:text-red-400 transition-colors" />
+                </button>
                 <button onClick={() => setIsOpen(false)}>
                   <X className="w-4 h-4 hover:text-primary transition-colors" />
                 </button>
