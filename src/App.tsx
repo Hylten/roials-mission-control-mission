@@ -60,11 +60,13 @@ const App = () => {
                 <Bot className="w-3 h-3" />
                 Hermes Core
               </h3>
-              <div className="bg-black/40 rounded-lg p-3 font-mono text-[10px] text-emerald-400 border border-emerald-400/20">
-                {'>'} deepseek-v4-flash-free active<br/>
-                {'>'} workflow engine: 10 min tick<br/>
-                {'>'} 12 cron-jobb · failsafe-kedja (11 gratis)<br/>
-                {'>'} evolution: OpenMono lokal $0
+              <div className="space-y-1.5 text-[11px] text-white/85">
+                <p>🤖 Din huvud-agent — allt går igenom mig</p>
+                <p>⚡ Kör just nu: DeepSeek (gratis)</p>
+                <p>🔄 Motorn tickar var 10:e minut</p>
+                <p>📅 12 automatiska jobb varje dag</p>
+                <p>🛟 11 gratis-modeller i reservkedjan</p>
+                <p>🧠 Självlärande via lokal AI ($0)</p>
               </div>
             </div>
 
