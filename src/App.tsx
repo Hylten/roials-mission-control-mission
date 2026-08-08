@@ -5,6 +5,7 @@ import AgentPulse from "./components/AgentPulse";
 import KanbanBoard from "./components/KanbanBoard";
 import RevenueShield from "./components/RevenueShield";
 import TokenPulse from "./components/TokenPulse";
+import MorningBrief from "./components/MorningBrief";
 
 const App = () => {
   return (
@@ -114,6 +115,9 @@ const App = () => {
           </div>
           <AgentPulse />
         </section>
+
+        {/* Morning Brief (längst ner, minimerbar) */}
+        <MorningBrief />
 
         {/* Kanban System */}
         <section className="space-y-4 pb-20">
