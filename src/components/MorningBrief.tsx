@@ -11,6 +11,7 @@ interface MorningBriefData {
   date: string;
   generated_at: string;
   needs_attention: boolean;
+  summary: string;
   sections: BriefSection[];
 }
 
@@ -64,8 +65,9 @@ const MorningBrief = () => {
           {data && (
             <>
               <div className="flex items-center justify-between mb-3">
-                <span className="text-[10px] text-muted-foreground">
-                  🌅 {data.date} · genererad {data.generated_at}
+                <span className="text-xs font-bold text-white">{data.summary}</span>
+                <span className="text-[9px] text-muted-foreground ml-3 shrink-0">
+                  🌅 {data.date} · {data.generated_at.slice(11, 16)}
                 </span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
