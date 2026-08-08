@@ -1,34 +1,82 @@
 [
   {
     "id": "task-1",
-    "title": "📞 Power Dialer Setup (HubSpot/Zcall)",
-    "status": "todo",
+    "title": "✍️ Mr. Writer — Daglig content-loop (8 bloggar)",
+    "status": "in-progress",
     "priority": "high",
-    "assignedTo": "platnicklas",
-    "category": "SDR"
+    "assignedTo": "mr-writer",
+    "category": "Content"
   },
   {
     "id": "task-2",
-    "title": "🏢 LinkedIn Sales Navigator Skrapning",
+    "title": "📥 Inbox Manager — Svara replied leads",
     "status": "todo",
     "priority": "high",
-    "assignedTo": "platnicklas",
-    "category": "SDR"
+    "assignedTo": "inbox-manager",
+    "category": "Inbox"
   },
   {
     "id": "task-3",
-    "title": "✉️ Kalla Mail B2B Templates",
-    "status": "in-progress",
+    "title": "📰 Daglig Briefing kl 08:00 (Telegram)",
+    "status": "todo",
     "priority": "medium",
-    "assignedTo": "bo",
-    "category": "Email"
+    "assignedTo": "hermes-core",
+    "category": "Briefing"
   },
   {
     "id": "task-4",
-    "title": "💎 Mission Control Dashboard",
+    "title": "📊 Artikeldigest — granskning kl 19:00",
+    "status": "todo",
+    "priority": "medium",
+    "assignedTo": "hermes-core",
+    "category": "QA"
+  },
+  {
+    "id": "task-5",
+    "title": "🔍 Push-vakt — QA-fixar till GitHub (var 60e min)",
     "status": "in-progress",
     "priority": "medium",
-    "assignedTo": "antigravity",
+    "assignedTo": "hermes-core",
+    "category": "GitHub"
+  },
+  {
+    "id": "task-6",
+    "title": "📬 Roials Alpha — Inbox-synk assistentenmail (var 20e min)",
+    "status": "in-progress",
+    "priority": "high",
+    "assignedTo": "roials-alpha",
+    "category": "Outreach"
+  },
+  {
+    "id": "task-7",
+    "title": "🎯 Roials Alpha — Prospektsourcing (daglig 06:00)",
+    "status": "todo",
+    "priority": "high",
+    "assignedTo": "roials-alpha",
+    "category": "SDR"
+  },
+  {
+    "id": "task-8",
+    "title": "🚫 Roials Alpha — Bounce-hantering (var 30e min)",
+    "status": "in-progress",
+    "priority": "medium",
+    "assignedTo": "roials-alpha",
+    "category": "Outreach"
+  },
+  {
+    "id": "task-9",
+    "title": "🤖 Codex Bridge — första riktiga test (08:30)",
+    "status": "todo",
+    "priority": "medium",
+    "assignedTo": "hermes-core",
     "category": "AI"
+  },
+  {
+    "id": "token-monitor",
+    "title": "🟢 Token Monitor — idag 151.6M tok, vecka 907.0M",
+    "status": "done",
+    "priority": "low",
+    "assignedTo": "hermes-core",
+    "category": "Token Monitor"
   }
 ]

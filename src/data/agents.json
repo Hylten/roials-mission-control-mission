@@ -1,26 +1,34 @@
 [
   {
-    "id": "antigravity",
-    "name": "Antigravity",
-    "role": "Lead AI Architect",
-    "status": "thinking",
-    "lastAction": "Optimizing Mission Control",
-    "color": "hsl(213, 100%, 75%)"
+    "id": "hermes-core",
+    "name": "Hermes Core",
+    "role": "Orchestrator — alla cron-jobb",
+    "status": "active",
+    "lastAction": "Driver 12 automatiska jobb",
+    "color": "hsl(265, 100%, 70%)"
   },
   {
-    "id": "bo",
-    "name": "Bo",
-    "role": "Inbound & CRM Manager",
-    "status": "idle",
-    "lastAction": "Summarizing Discord",
+    "id": "mr-writer",
+    "name": "Mr. Writer",
+    "role": "Content-loop · 8 bloggar (QA)",
+    "status": "active",
+    "lastAction": "Körs var 30:e min — senast OK 02:32",
     "color": "hsl(142, 71%, 45%)"
   },
   {
-    "id": "platnicklas",
-    "name": "Plåtnicklas",
-    "role": "SDR Outreach",
-    "status": "active",
-    "lastAction": "Checking YouTube Trends",
+    "id": "inbox-manager",
+    "name": "Inbox Manager",
+    "role": "Prosp→Replied leads→Draft",
+    "status": "idle",
+    "lastAction": "Nästa körning 08:00 — senast error (Telegram timeout)",
     "color": "hsl(0, 72%, 51%)"
+  },
+  {
+    "id": "roials-alpha",
+    "name": "Roials Alpha GTM",
+    "role": "Inbox-sync · Prospektsourcing · Bounce",
+    "status": "active",
+    "lastAction": "Inbox-synk var 20:e min — OK",
+    "color": "hsl(213, 100%, 75%)"
   }
 ]
